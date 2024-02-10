@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Railway Management System</title>
+    <style>
+        /* Add CSS styles for your tables */
+        table {
+          font-family: Garamond, serif; /* Change the font to Garamond */
+          border-collapse: collapse;
+          width: 100%;
+          margin-top: 20px;
+          border: 2px solid black;
+          background-color: #f2f2f2; 
+        }
+    
+        th, td {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+    
+        th {
+          background-color: #f2f2f2;
+          border: 2px solid black; 
+        }
+    
+        tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+    
+        /* Style the heading for each table */
+        h2 {
+          background-color: #333;
+          color: white;
+          padding: 10px;
+          margin: 10px 0; 
+          font-family: Garamond, serif; /* Decorative font */
+          font-size: 36px; /* Larger font size */
+        }
+    
+        /* Style the submit button with red color */
+        input[type="submit"] {
+          background-color: red;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+          margin-top: 20px; 
+          display: block; /* Make the button a block element for spacing */
+        }
+    
+        /* Style for the main heading */
+        .main-heading {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 20px; 
+        margin-bottom: 20px;
+        font-family: Garamond, serif; /* Decorative font */
+        font-size: 50px; /* Larger font size */
+       }
+    
+        /* Style for the train symbol */
+        .train-symbol {
+          text-align: center;
+          font-size: 100px;
+        }
+      </style>
+</head>
+<body>
+    <h1 class="main-heading">Railway Management System <span class="train-symbol">🚆</span></h1>
+
+    <h2>Users Table</h2>
+    <table>
+        <tr>
+            <th>UserID</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>user1</td>
+            <td>password1</td>
+            <td>user1@example.com</td>
+            <td>123-456-7890</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>user2</td>
+            <td>password2</td>
+            <td>user2@example.com</td>
+            <td>987-654-3210</td>
+        </tr>
+    </table>
+
+    <h2>Trains Table</h2>
+    <table>
+        <tr>
+            <th>TrainID</th>
+            <th>TrainName</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>DepartureTime</th>
+            <th>ArrivalTime</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Express Train</td>
+            <td>City A</td>
+            <td>City B</td>
+            <td>08:00 AM</td>
+            <td>12:00 PM</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Local Train</td>
+            <td>City C</td>
+            <td>City D</td>
+            <td>10:30 AM</td>
+            <td>02:30 PM</td>
+        </tr>
+    </table>
+
+    <h2>Seats Table</h2>
+    <table>
+        <tr>
+            <th>SeatID</th>
+            <th>TrainID</th>
+            <th>SeatNumber</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>201</td>
+            <td>101</td>
+            <td>1A</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>202</td>
+            <td>101</td>
+            <td>1B</td>
+            <td>Booked</td>
+        </tr>
+    </table>
+
+    <h2>Reservations Table</h2>
+    <table>
+        <tr>
+            <th>ReservationID</th>
+            <th>UserID</th>
+            <th>TrainID</th>
+            <th>SeatID</th>
+            <th>ReservationDate</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>301</td>
+            <td>1</td>
+            <td>101</td>
+            <td>201</td>
+            <td>2023-11-08</td>
+            <td>Confirmed</td>
+        </tr>
+        <tr>
+            <td>302</td>
+            <td>2</td>
+            <td>101</td>
+            <td>202</td>
+            <td>2023-11-10</td>
+            <td>Confirmed</td>
+        </tr>
+    </table>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit" class="submit-button">
+</body>
+</html>

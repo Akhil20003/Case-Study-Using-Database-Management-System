@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Add CSS styles for your tables and other styles as needed */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            border: 2px solid black;
+            background-color: #f2f2f2;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            border: 2px solid black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        input[type="submit"] {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .main-heading {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            font-family: "Brush Script MT", cursive;
+            font-size: 50px;
+        }
+
+        .train-symbol {
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Heading -->
+    <div class="main-heading">
+        <h1>Railway Management System</h1>
+        <div class="train-symbol">🚆</div>
+    </div>
+
+    <!-- Passenger Form -->
+    <h2>Passenger Information</h2>
+    <form action="backend.php" method="post">
+        <label for="passenger_name">Passenger Name:</label>
+        <input type="text" name="passenger_name" required>
+
+        <label for="contact_number">Contact Number:</label>
+        <input type="text" name="contact_number" required>
+
+        <label for="address">Address:</label>
+        <textarea name="address" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Train Table -->
+<h2>Train Table</h2>
+<table>
+  <tr>
+    <th>Train_ID</th>
+    <th>Train_Name</th>
+    <th>Departure_Station</th>
+    <th>Arrival_Station</th>
+    <th>Departure_Time</th>
+    <th>Arrival_Time</th>
+    <th>Total_Seats</th>
+    <th>Available_Seats</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Express 123</td>
+    <td>Station A</td>
+    <td>Station B</td>
+    <td>09:00 AM</td>
+    <td>11:00 AM</td>
+    <td>100</td>
+    <td>50</td>
+  </tr>
+  <!-- Add more rows here if needed -->
+</table>
+
+<!-- Passenger Table -->
+<h2>Passenger Table</h2>
+<table>
+  <tr>
+    <th>Passenger_ID</th>
+    <th>Name</th>
+    <th>Contact_Number</th>
+    <th>Address</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Ganesh</td>
+    <td>8179421105</td>
+    <td>Tadepalli,padmasali street</td>
+  </tr>
+  <!-- Add more rows here if needed -->
+</table>
+
+<!-- Reservation Table -->
+<h2>Reservation Table</h2>
+<table>
+  <tr>
+    <th>Reservation_ID</th>
+    <th>Passenger_ID</th>
+    <th>Train_ID</th>
+    <th>Seat_Number</th>
+    <th>Date</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>5</td>
+    <td>2023-11-08</td>
+  </tr>
+  <!-- Add more rows here if needed -->
+</table>
+
+<!-- Ticket Table -->
+<h2>Ticket Table</h2>
+<table>
+  <tr>
+    <th>Ticket_ID</th>
+    <th>Reservation_ID</th>
+    <th>Fare</th>
+    <th>Payment_Status</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>150.00</td>
+    <td>Paid</td>
+  </tr>
+  <!-- Add more rows here if needed -->
+</table>
+
+<!-- Station Table -->
+<h2>Station Table</h2>
+<table>
+  <tr>
+    <th>Station_ID</th>
+    <th>Station_Name</th>
+    <th>Location</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Guntur</td>
+    <td>Mangalagiri</td>
+  </tr>
+  <!-- Add more rows here if needed -->
+</table>
+
+<!-- Employee Table -->
+<h2>Employee Table</h2>
+<table>
+  <tr>
+    <th>Employee_ID</th>
+    <th>Name</th>
+    <th>Position</th>
+    <th>Contact_Number</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Ganesh</td>
+    <td>Manager</td>
+    <td>8179421105</td>
+  </tr>
+  <!-- Add more rows here if needed -->
+</table>
+
+<!-- Add a submit button with red color -->
+<input type="submit" value="Submit">
+
+</body>
+
+</html>

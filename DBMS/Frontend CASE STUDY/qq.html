@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combined Information</title>
+</head>
+<body>
+    <h1>Combined Information</h1>
+    <form action="submit_combined.php" method="post">
+        <h2>Train Information</h2>
+        <label for="Train_ID">Train ID:</label>
+        <input type="text" name="Train_ID" id="Train_ID"><br><br>
+
+        <label for="Train_Name">Train Name:</label>
+        <input type="text" name="Train_Name" id="Train_Name"><br><br>
+
+        <label for="Departure_Station">Departure Station:</label>
+        <input type="text" name="Departure_Station" id="Departure_Station"><br><br>
+
+        <label for="Arrival_Station">Arrival Station:</label>
+        <input type="text" name="Arrival_Station" id="Arrival_Station"><br><br>
+
+        <label for="Departure_Time">Departure Time:</label>
+        <input type="time" name="Departure_Time" id="Departure_Time"><br><br>
+
+        <label for="Arrival_Time">Arrival Time:</label>
+        <input type="time" name="Arrival_Time" id="Arrival_Time"><br><br>
+
+        <label for="Total_Seats">Total Seats:</label>
+        <input type="text" name="Total_Seats" id="Total_Seats"><br><br>
+
+        <label for="Available_Seats">Available Seats:</label>
+        <input type="text" name="Available_Seats" id="Available_Seats"><br><br>
+
+        <h2>Passenger Information</h2>
+        <label for="Passenger_ID">Passenger ID:</label>
+        <input type="text" name="Passenger_ID" id="Passenger_ID"><br><br>
+
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" id="Name"><br><br>
+
+        <label for="Contact_Number">Contact Number:</label>
+        <input type="text" name="Contact_Number" id="Contact_Number"><br><br>
+
+        <label for="Address">Address:</label>
+        <textarea name="Address" id="Address" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Include fields for other tables (Reservation, Ticket, Station, Employee) here -->
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

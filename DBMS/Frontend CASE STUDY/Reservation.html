@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservation Information</title>
+</head>
+<body>
+    <h1>Reservation Information</h1>
+    <form action="submit_reservation.php" method="post">
+        <label for="Reservation_ID">Reservation ID:</label>
+        <input type="text" name="Reservation_ID" id="Reservation_ID"><br><br>
+
+        <label for="Passenger_ID">Passenger:</label>
+        <select name="Passenger_ID" id="Passenger_ID">
+            <option value="1">Passenger 1</option>
+            <option value="2">Passenger 2</option>
+            <!-- Add more options for existing passengers -->
+        </select><br><br>
+
+        <label for="Train_ID">Train:</label>
+        <select name="Train_ID" id="Train_ID">
+            <option value="1">Train 1</option>
+            <option value="2">Train 2</option>
+            <!-- Add more options for existing trains -->
+        </select><br><br>
+
+        <label for="Seat_Number">Seat Number:</label>
+        <input type="text" name="Seat_Number" id="Seat_Number"><br><br>
+
+        <label for="Date">Date:</label>
+        <input type="date" name="Date" id="Date"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

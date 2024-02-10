@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combined Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        td input[type="text"],
+        td input[type="time"],
+        td select,
+        td textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        
+        /* Add styling for alternating table rows */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Styling for form labels */
+        label {
+            font-weight: bold;
+        }
+
+        /* Add different background colors for each form section */
+        .form-section {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Combined Information</h1>
+
+        <!-- Train Information -->
+        <div class="form-section">
+            <h2>Train Information</h2>
+            <table>
+                <tr>
+                    <th>Train ID</th>
+                    <th>Train Name</th>
+                    <th>Departure Station</th>
+                    <th>Arrival Station</th>
+                    <th>Departure Time</th>
+                    <th>Arrival Time</th>
+                    <th>Total Seats</th>
+                    <th>Available Seats</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="Train_ID" id="Train_ID"></td>
+                    <td><input type="text" name="Train_Name" id="Train_Name"></td>
+                    <td><input type="text" name="Departure_Station" id="Departure_Station"></td>
+                    <td><input type="text" name="Arrival_Station" id="Arrival_Station"></td>
+                    <td><input type="time" name="Departure_Time" id="Departure_Time"></td>
+                    <td><input type="time" name="Arrival_Time" id="Arrival_Time"></td>
+                    <td><input type="text" name="Total_Seats" id="Total_Seats"></td>
+                    <td><input type="text" name="Available_Seats" id="Available_Seats"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Passenger Information -->
+        <div class="form-section">
+            <h2>Passenger Information</h2>
+            <table>
+                <tr>
+                    <th>Passenger ID</th>
+                    <th>Name</th>
+                    <th>Contact Number</th>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="Passenger_ID" id="Passenger_ID"></td>
+                    <td><input type="text" name="Name" id="Name"></td>
+                    <td><input type="text" name="Contact_Number" id="Contact_Number"></td>
+                    <td><textarea name="Address" id="Address" rows="4" cols="20"></textarea></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Reservation Information -->
+        <div class="form-section">
+            <h2>Reservation Information</h2>
+            <table>
+                <tr>
+                    <th>Reservation ID</th>
+                    <th>Passenger</th>
+                    <th>Train</th>
+                    <th>Seat Number</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="Reservation_ID" id="Reservation_ID"></td>
+                    <td>
+                        <select name="Passenger_ID" id="Passenger_ID">
+                            <option value="1">Passenger 1</option>
+                            <option value="2">Passenger 2</option>
+                            <!-- Add more options for existing passengers -->
+                        </select>
+                    </td>
+                    <td>
+                        <select name="Train_ID" id="Train_ID">
+                            <option value="1">Train 1</option>
+                            <option value="2">Train 2</option>
+                            <!-- Add more options for existing trains -->
+                        </select>
+                    </td>
+                    <td><input type="text" name="Seat_Number" id="Seat_Number"></td>
+                    <td><input type="date" name="Date" id="Date"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Ticket Information -->
+        <div class="form-section">
+            <h2>Ticket Information</h2>
+            <table>
+                <tr>
+                    <th>Ticket ID</th>
+                    <th>Reservation ID</th>
+                    <th>Fare</th>
+                    <th>Payment Status</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="Ticket_ID" id="Ticket_ID"></td>
+                    <td><input type="text" name="Reservation_ID" id="Reservation_ID"></td>
+                    <td><input type="text" name="Fare" id="Fare"></td>
+                    <td><input type="text" name="Payment_Status" id="Payment_Status"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Employee Information -->
+        <div class="form-section">
+            <h2>Employee Information</h2>
+            <table>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Contact Number</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="Employee_ID" id="Employee_ID"></td>
+                    <td><input type="text" name="Name" id="Name"></td>
+                    <td><input type="text" name="Position" id="Position"></td>
+                    <td><input type="text" name="Contact_Number" id="Contact_Number"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Station Information -->
+        <div class="form-section">
+            <h2>Station Information</h2>
+            <table>
+                <tr>
+                    <th>Station ID</th>
+                    <th>Station Name</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="Station_ID" id="Station_ID"></td>
+                    <td><input type="text" name="Station_Name" id="Station_Name"></td>
+                    <td><input type="text" name="Location" id="Location"></td>
+                </tr>
+            </table>
+        </div>
+
+        <input type="submit" value="Submit">
+    </div>
+</body>
+</html>
